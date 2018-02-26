@@ -37,8 +37,8 @@ html {
 }
 
 body {
-	color: #6a6a6a;	
-	background: #f1f0f0;
+	color: black;
+	font-weight: 600;
 }
 
 p {margin: 0 0 20px 0;	}
@@ -106,8 +106,6 @@ h1, h2, h3, h4, h5, h6{
 }
 
 #header.header-wrapper {
-	background-image: url(../images/back.gif);
-	background-size: cover;
 	display: table;
 	height: 100vh;
 	width: 100%;
@@ -166,7 +164,7 @@ h1, h2, h3, h4, h5, h6{
 	font-size: 4em;
 	margin-bottom: 15px;
 	line-height: 1em;
-	color: white;
+	color: black;
 }
 
 #header .secondary-slogan{
@@ -509,4 +507,65 @@ h1, h2, h3, h4, h5, h6{
 .slogan a{
 	text-decoration:none
 }
-.slogan a:hover {color:white;} a:visited {color:white;} a:link {color:white;} a {color:white;}
+.slogan a:hover {color:black;} a:visited {color:black;} a:link {color:black;} a {color:black;}
+
+
+
+/*common*/
+.navbar-nav li {
+	float:initial;
+}
+.navbar-default {
+	background-color: rgba(0, 0, 0, 0);
+	border-color: rgba(0, 0, 0, 0);
+}
+.mb-20 {
+	margin-bottom: 20px;
+}
+.content-block {
+	padding: 60px 0;
+}
+.navbar-collapse{
+	padding-left: 0px;
+	font-weight: 600;
+}
+.navbar-brand {
+	font-weight: 800;
+}
+.navbar-default .navbar-brand{
+	color: black;
+}
+.navbar-default .navbar-nav>li>a{
+	color: black;
+}
+.navbar-default .navbar-brand a:hover {color:black;} .navbar-brand a:visited {color:black;} .navbar-brand a:link {color:black;} .navbar-brand a {color:black; text-decoration:none;}
+.slider {
+	margin-top: 80px;
+}
+
+
+#container {height: 590px;}
+@media (max-width: 1200px) {
+	#container {height: auto;}
+}
+
+
+@media (max-width: 480px) {
+	.navbar-brand {
+		font-size: 13px;
+	}
+	.content-block {
+		padding: 0;
+	}
+	.slider {
+		margin-top: 0px;
+		height: 380px;
+	}
+	.slider .img-box {
+		margin-top: 160px;
+	}
+	#footer{
+		margin-top: 20px;
+	}
+	#container {height: 590px;}
+}
