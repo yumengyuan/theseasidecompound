@@ -411,7 +411,7 @@ h1, h2, h3, h4, h5, h6{
 
 
 /*#footer{ background: #2B3E51; color: white;}*/
-
+#footer { font-size: 12px;}
 
 
 /*////////////////////////////////////////////////////////////////////////
@@ -544,9 +544,12 @@ h1, h2, h3, h4, h5, h6{
 }
 
 
-#container {height: 590px;}
+/*#container {height: 880px;}*/
+html{height:100%;}
+body{min-height:100%;margin:0;padding:0;position:relative;}
+#footer{position:absolute;bottom:0;width:100%;height:auto;}
 @media (max-width: 1200px) {
-	#container {height: auto;}
+	/*#container {height: 880px;}*/
 }
 
 
@@ -559,7 +562,6 @@ h1, h2, h3, h4, h5, h6{
 	}
 	.slider {
 		margin-top: 0px;
-		height: 380px;
 	}
 	.slider .img-box {
 		margin-top: 160px;
@@ -567,5 +569,5 @@ h1, h2, h3, h4, h5, h6{
 	#footer{
 		margin-top: 20px;
 	}
-	#container {height: 590px;}
+	#container {min-height:100%;}
 }
